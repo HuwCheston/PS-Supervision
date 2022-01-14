@@ -1,0 +1,5 @@
+0.667333333,New Point
+0.854000000,New Point
+0.998666667,New Point
+1.178666667,New Point
+1.338666667,New Point

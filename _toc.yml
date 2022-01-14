@@ -1,0 +1,20 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: exercise_1_intro
+  sections:
+  - file: exercise_1_section_1
+  - file: exercise_1_section_2
+  - file: exercise_1_section_3
+  - file: exercise_1_section_4
+  - file: exercise_1_checklist
+- file: exercise_2_intro
+  sections:
+  - file: exercise_2_section_1
+  - file: exercise_2_section_2
+  - file: exercise_2_section_3
+  - file: exercise_2_section_4
+  - file: exercise_2_checklist
