@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3: Data Cleaning &#8212; Performance Science - Supervision Exercises</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Section 4: Interpreting the Data" href="exercise_4_section_4.html" />
+    <link rel="prev" title="Section 2: Sonic Visualiser" href="exercise_4_section_2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Performance Science - Supervision Exercises</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Supervision Exercises
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ex1/exercise_1_intro.html">
+   Exercise 1 – Body Motion
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex1/exercise_1_section_1.html">
+     Section 1: Pre-Reading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex1/exercise_1_section_2.html">
+     Section 2: Motion Energy Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex1/exercise_1_section_3.html">
+     Section 3: Data Cleaning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex1/exercise_1_section_4.html">
+     Section 4: Interpreting the Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex1/exercise_1_checklist.html">
+     Checklist of tasks for Exercise 1
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ex2/exercise_2_intro.html">
+   Exercise 2 – Rhythm and Timing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex2/exercise_2_section_1.html">
+     Section 1: Pre-Reading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex2/exercise_2_section_2.html">
+     Section 2: Sonic Visualiser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex2/exercise_2_section_3.html">
+     Section 3: Data Cleaning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex2/exercise_2_section_4.html">
+     Section 4: Interpreting the Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex2/exercise_2_checklist.html">
+     Checklist of tasks for Exercise 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ex3/exercise_3_intro.html">
+   Exercise 3 – Tempo and Speed
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex3/exercise_3_section_1.html">
+     Section 1: Pre-Reading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex3/exercise_3_section_2.html">
+     Section 2: Sonic Visualiser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex3/exercise_3_section_3.html">
+     Section 3: Data Cleaning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex3/exercise_3_section_4.html">
+     Section 4: Interpreting the Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ex3/exercise_3_checklist.html">
+     Checklist of tasks for Exercise 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="exercise_4_intro.html">
+   Exercise 4 – Vibrato and Pitch
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercise_4_section_1.html">
+     Section 1: Pre-Reading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercise_4_section_2.html">
+     Section 2: Sonic Visualiser
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Section 3: Data Cleaning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercise_4_section_4.html">
+     Section 4: Interpreting the Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercise_4_checklist.html">
+     Checklist of tasks for Exercise 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../further_reading.html">
+   Further Reading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/ex4/exercise_4_section_3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/HuwCheston/PS-Supervision"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-the-duration-data-and-split-into-columns">
+   Load the duration data and split into columns.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-fundamental-frequency">
+   Calculate the fundamental frequency.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-wobble-within-each-vibrato">
+   Calculate the ‘wobble’ within each vibrato.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-average-deviations">
+   Calculate the average deviations.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-average-depth-of-a-vibrato-cycle">
+   Calculate the average depth of a vibrato cycle.
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Section 3: Data Cleaning</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-the-duration-data-and-split-into-columns">
+   Load the duration data and split into columns.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-fundamental-frequency">
+   Calculate the fundamental frequency.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-wobble-within-each-vibrato">
+   Calculate the ‘wobble’ within each vibrato.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-average-deviations">
+   Calculate the average deviations.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-the-average-depth-of-a-vibrato-cycle">
+   Calculate the average depth of a vibrato cycle.
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="section-3-data-cleaning">
+<h1>Section 3: Data Cleaning<a class="headerlink" href="#section-3-data-cleaning" title="Permalink to this headline">¶</a></h1>
+<p>We will now switch to analysing our data in a statistical program. Excel and Google Sheets will be referred to here, and can be accessed for free online using your Cambridge ID. If you are used to using a different program such as RStats, SPSS, Stata or Python you may also use this to clean and analyse your data.</p>
+<div class="section" id="load-the-duration-data-and-split-into-columns">
+<h2>Load the duration data and split into columns.<a class="headerlink" href="#load-the-duration-data-and-split-into-columns" title="Permalink to this headline">¶</a></h2>
+<p>Create a new spreadsheet in whichever program you are using and copy the .txt file for the <strong>fundamental pitch</strong> you created in Sonic Visualiser into it. It will load in as a single column. Highlight this column, then click Data - Text to Columns and apply (on Excel) or Data - Split Text to Columns (Google Sheets). In both cases, make sure that the delimiter is set to Commas or Spaces - whichever you selected in Sonic Visualiser.</p>
+<p>The first two columns refer to the time of the start and end point of the box; we are not interested in these, so feel free to delete them. You should be left with two columns and one data point, showing the high and low point of the fundamental frequency.</p>
+<p>With this out of the way, load in the second .txt file for the <strong>vibrato wobbles</strong> into two seperate columns and repeat the process of splitting.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some spreadsheet or data packages may carry out this splitting process for you automatically.</p>
+</div>
+</div>
+<div class="section" id="calculate-the-fundamental-frequency">
+<h2>Calculate the fundamental frequency.<a class="headerlink" href="#calculate-the-fundamental-frequency" title="Permalink to this headline">¶</a></h2>
+<p>Next, we need to average the two values for the fundamental frequency to get the true pitch. Use this formula:</p>
+<p><code class="docutils literal notranslate"><span class="pre">=AVERAGE(high_point:low_point)</span></code></p>
+<p><strong>Expected result:</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Frequency</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>670.6685</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="calculate-the-wobble-within-each-vibrato">
+<h2>Calculate the ‘wobble’ within each vibrato.<a class="headerlink" href="#calculate-the-wobble-within-each-vibrato" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned, vibrato is the deviation from a fundamental pitch. We need to work out how far away the ‘high’ and ‘low’ parts of each wobble are from the fundamental. Enter this command into a blank cell next to your data and drag it down to calculate the deviations:</p>
+<p><code class="docutils literal notranslate"><span class="pre">=wobble_frequency-$fundamental_$frequency</span></code></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The dollar signs here are really important, as they tell the program to read from the same value for multiple calculations. So, if your fundamental is in cell A1 and your ‘low’ wobble note in A2, your formula should be <code class="docutils literal notranslate"><span class="pre">=A2=$A$1</span></code>.</p>
+</div>
+<p><strong>Expected result:</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Low Pitch</p></th>
+<th class="head"><p>High Pitch</p></th>
+<th class="head"><p>Low Dev.</p></th>
+<th class="head"><p>High Dev.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>624.127</p></td>
+<td><p>717.21</p></td>
+<td><p>-46.5415</p></td>
+<td><p>46.5415</p></td>
+</tr>
+<tr class="row-odd"><td><p>613.539</p></td>
+<td><p>717.21</p></td>
+<td><p>-57.1295</p></td>
+<td><p>46.5415</p></td>
+</tr>
+<tr class="row-even"><td><p>618.81</p></td>
+<td><p>718.746</p></td>
+<td><p>-51.8585</p></td>
+<td><p>48.0775</p></td>
+</tr>
+<tr class="row-odd"><td><p>618.81</p></td>
+<td><p>714.149</p></td>
+<td><p>-51.8585</p></td>
+<td><p>43.4805</p></td>
+</tr>
+<tr class="row-even"><td><p>624.127</p></td>
+<td><p>712.623</p></td>
+<td><p>-46.5415</p></td>
+<td><p>41.9545</p></td>
+</tr>
+<tr class="row-odd"><td><p>618.81</p></td>
+<td><p>712.623</p></td>
+<td><p>-51.8585</p></td>
+<td><p>41.9545</p></td>
+</tr>
+<tr class="row-even"><td><p>625.463</p></td>
+<td><p>717.21</p></td>
+<td><p>-45.2055</p></td>
+<td><p>46.5415</p></td>
+</tr>
+<tr class="row-odd"><td><p>629.489</p></td>
+<td><p>712.623</p></td>
+<td><p>-41.1795</p></td>
+<td><p>41.9545</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="calculate-the-average-deviations">
+<h2>Calculate the average deviations.<a class="headerlink" href="#calculate-the-average-deviations" title="Permalink to this headline">¶</a></h2>
+<p>OK, great - we now know by the depth of each individual vibrato cycle, in relation to the fundamental frequency. We are now interested in the average deviation either side of the fundamental frequency. We can use this formula to calculate both the high and low average vibrato depth:</p>
+<p><code class="docutils literal notranslate"><span class="pre">=AVERAGE(ABS(first_pitch:last_pitch))</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I’ve added the ABS() command - short for absolute - here to make sure that any differences in sign across your data doesn’t affect the result. This command converts all negative numbers to positive.</p>
+</div>
+<p><strong>Expected result:</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Low Avg.</p></th>
+<th class="head"><p>High Avg.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>49.021625</p></td>
+<td><p>44.63075</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="calculate-the-average-depth-of-a-vibrato-cycle">
+<h2>Calculate the average depth of a vibrato cycle.<a class="headerlink" href="#calculate-the-average-depth-of-a-vibrato-cycle" title="Permalink to this headline">¶</a></h2>
+<p>We should now have ended up with two positive values. The low average number shows the lower bound of a typical vibrato cycle; vice-versa, the high average number shows the upper bound of a typical cycle. In combination with our fundamental frequency, we can use these values to get an indication of the average vibrato extent.</p>
+<p>We need to subtract the low average number from our fundamental frequency, like so:</p>
+<p><code class="docutils literal notranslate"><span class="pre">=fundamental_frequency-low_avg</span></code></p>
+<p>We then need to add the high average number to our fundamental frequency:</p>
+<p><code class="docutils literal notranslate"><span class="pre">=fundamental_frequency+high_avg</span></code></p>
+<p><strong>Expected result:</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">bound</span> <span class="pre">of</span> <span class="pre">vibrato</span> <span class="pre">=</span> <span class="pre">626.04</span> <span class="pre">Hz</span> <span class="pre">Fundamental</span> <span class="pre">frequency</span> <span class="pre">=</span> <span class="pre">670.67</span> <span class="pre">Hz</span> <span class="pre">Upper</span> <span class="pre">bound</span> <span class="pre">of</span> <span class="pre">vibrato</span> <span class="pre">=</span> <span class="pre">715.30</span> <span class="pre">Hz</span></code></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content\ex4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="exercise_4_section_2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Section 2: Sonic Visualiser</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="exercise_4_section_4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Section 4: Interpreting the Data</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Huw Cheston<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
