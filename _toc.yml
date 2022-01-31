@@ -10,6 +10,7 @@ chapters:
   - file: content/ex1/exercise_1_section_2
   - file: content/ex1/exercise_1_section_3
   - file: content/ex1/exercise_1_section_4
+  - file: content/ex1/exercise_1_section_5
   - file: content/ex1/exercise_1_checklist
 - file: content/ex2/exercise_2_intro
   sections:
@@ -17,6 +18,7 @@ chapters:
   - file: content/ex2/exercise_2_section_2
   - file: content/ex2/exercise_2_section_3
   - file: content/ex2/exercise_2_section_4
+  - file: content/ex2/exercise_2_section_5
   - file: content/ex2/exercise_2_checklist
 - file: content/ex3/exercise_3_intro
   sections:
@@ -24,6 +26,7 @@ chapters:
   - file: content/ex3/exercise_3_section_2
   - file: content/ex3/exercise_3_section_3
   - file: content/ex3/exercise_3_section_4
+  - file: content/ex3/exercise_3_section_5
   - file: content/ex3/exercise_3_checklist
 - file: content/ex4/exercise_4_intro
   sections:
@@ -31,5 +34,6 @@ chapters:
   - file: content/ex4/exercise_4_section_2
   - file: content/ex4/exercise_4_section_3
   - file: content/ex4/exercise_4_section_4
+  - file: content/ex4/exercise_4_section_5
   - file: content/ex4/exercise_4_checklist
 - file: content/further_reading

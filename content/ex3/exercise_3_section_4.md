@@ -18,12 +18,4 @@ Take a look at these values and compare them to your own. How close are they to 
 
 If the model does seem to explain the data you gathered, why do you think this is - and does this mean Bowen's model is still valid? If not, what might have happened in the intervening twenty years to cause a change in performance practice? Finally, if only one of Bowen's values comes close to your own, what might this suggest about the other sections of the exposition as well as the second theme?
 
-**Please come to the supervision ready to discuss these questions**
-
-:::{admonition} Extension
-Comparing one recording to Bowen's model doesn't actually tell us much - after all, it could always be an outlier. If you have time and are interested, try repeating the exercise using a different recording. What do you notice?
-
-**OR**
-
-Optionally, you could also work through another complete exercise.
-:::
+**Try and think about these issues when answering the questions on the following page!**
