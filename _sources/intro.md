@@ -2,9 +2,11 @@
 
 In preperation for the supervision, I'd like you to carry out a small empirical study into musical expression. 
 
-The following pages contain details about four studies, including research questions, source material, guidance on which software to use, and expected data outputs. Please choose **one** study to complete to start with: if you have the time after, feel free to complete another.
+The following pages contain details about four studies, including research questions, source material, guidance on which software to use, and expected data outputs.
 
-## Structure of the exercises
+## Structure of the task
+
+Complete **one** of the four tasks given below. If you have time after finishing this one, you may go back and complete another.
 
 - Exercise 1: Body Movement and Motion
 - Exercise 2: Rhythm and Timing
@@ -12,6 +14,10 @@ The following pages contain details about four studies, including research quest
 - Exercise 4: Pitch and Vibrato
 
 Exercise 1 will make use of [Motion Energy Analysis](https://psync.ch/mea-motion-energy-analysis/), while the other exercises will use [Sonic Visualiser](https://www.sonicvisualiser.org/). Both programs have been used extensively in music psychology research and don't require any prior knowledge of coding or computer programming.
+
+## Presenting your results
+
+The final section of each exercise will ask you to answer three small questions related to the task. Please [email me](mailto:hwc31@cam.ac.uk) your answers by **12PM the day before your supervision**. Please also bring your answers to the supervision, either in hard copy or on a laptop.
 
 :::{admonition} Contact
 If you have any issues completing any one of these exercises or running any of the software, don't hesitate to email me [here](mailto:hwc31@cam.ac.uk). If you absolutely cannot get the software specified to work, I have sample datasets available that will still allow you to complete the exercise.
