@@ -20,13 +20,6 @@ If not, then unfortunately there is no significant difference in the motion of t
 
 ## Presenting your findings
 
-On your spreadsheet, make a note of the P value generated from the t-test. Now, highlight both data columns and generate a line or pie chart to demonstrate the differences in motion between the two. Bring this to the supervision to discuss your findings! 
+On your spreadsheet, make a note of the P value generated from the t-test. Now, highlight both data columns and generate a line or pie chart to demonstrate the differences in motion between the two. What differences do you notice between the high and low intensity videos? Is musical intensity significantly related to performer body motion? Why (or why not)?
 
-:::{admonition} Extension
-If you have time and are interested, try repeating the exercise using a different video. What do you notice?
-
-**OR**
-
-Optionally, you could also work through another complete exercise.
-:::
-
+**Try and think about these issues when answering the questions on the following page!**

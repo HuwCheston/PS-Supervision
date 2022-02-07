@@ -31,10 +31,4 @@ Look closely at how Herbst et al. measure their average vibrato extent (esp. pag
 
 Finally, after you've made your comparison, have a think about what this might tell us about the different expressive or aesthetic goals of pop and non-pop singing. What can our analysis tell us here? 
 
-:::{admonition} Extension
-Try repeating this exercise by selecting another recording, either chosen from the OneDrive or by yourself. What differences emerge?
-
-**OR**
-
-Optionally, you could also work through another complete exercise.
-:::
+**Try and think about these issues when answering the questions on the following page!**
