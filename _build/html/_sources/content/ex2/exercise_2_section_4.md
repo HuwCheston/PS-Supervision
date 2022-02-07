@@ -13,14 +13,4 @@ If you want, you could try placing your BUR graph alongside the transcription of
 ## Comparing your data
 Take another look at the examples Benadon gives in his paper. Do you see any that look radically similar or different to your results? If you chose an excerpt by a musician that Benadon also studies (e.g. Dexter Gordon or Miles Davis), do your results for this musician contradict his? Why might this be?
 
-**Please come to the supervision ready to discuss these questions**
-
-:::{admonition} Extension
-If you have time and are interested, try repeating the exercise using a different recording. What do you notice?
-
-**OR**
-
-Optionally, you could also work through another complete exercise.
-:::
-
-
+**Try and think about these issues when answering the questions on the following page!**
