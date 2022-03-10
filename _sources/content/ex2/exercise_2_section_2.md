@@ -12,7 +12,7 @@ The Windows version of Sonic Visualiser runs on most modern updates. The Mac ver
 Whatever version you are using, download the program using the primary link. Open up the .msi (Windows) or .dmg (Mac) file you downloaded and follow the installer through to the end to complete the installation. On Windows, you may need to wait a while before pressing 'Yes' when the User Account Control screen pops up.
 
 ## Select ONE performance for further study, download audio and transcription files.
-Browse to the OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/EtWN3T-F8tpGiQSsyAfNqqUB5WhcNM49apINPWCKst2z1w?e=VDazbS), you should find a folder called 'Audio Files'.
+Browse to the OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/EtWN3T-F8tpGiQSsyAfNqqUB-J4-BQCdwoKS1D2637eH5w?e=fQKdcK), you should find a folder called 'Audio Files'.
 
 Inside this folder are six very short (under 5 seconds) .mp3 excerpts of recordings by notable musicians including Miles Davis, Ella Fitzgerald, and Wes Montgomery. These are all taken from performances of the piece 'A Night in Tunisia'. Have a listen to these and download ONE of the performances that you want to work with in this exercise.
 

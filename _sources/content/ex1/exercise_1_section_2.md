@@ -1,7 +1,7 @@
 # Section 2: Motion Energy Analysis
 ---
 ## Download Motion Energy Analysis software and extract it to your system.
-Open up this OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/r/personal/hwc31_cam_ac_uk/Documents/Part%20II%20M%26S%20Teaching%20Materials/Exercise%20-%20Movement?csf=1&web=1&e=eg4LCB)
+Open up this OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/EhYjWUWSRUFMkoDiLwcYx9wBjRKGOhl1M4TRu2_rDJPmDw?e=2fQH5S)
 
 Inside the folder, download either the MEA_WIN_4_11a.zip or the MEA_4_11a_MAC.zip, depending on whether you are using a Windows or Mac system and extract the files.
 

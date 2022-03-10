@@ -12,7 +12,7 @@ The Windows version of Sonic Visualiser runs on most modern updates. The Mac ver
 Whatever version you are using, download the program using the primary link. Open up the .msi (Windows) or .dmg (Mac) file you downloaded and follow the installer through to the end to complete the installation. On Windows, you may need to wait a while before pressing 'Yes' when the User Account Control screen pops up.
 
 ## Select ONE performance for further study, download audio and transcription files.
-Browse to the OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/Ej7FUh3GMwVMv5oCfr3LSdYBUc7PUy6aTNFEo9qnpvjVYg?e=64w6so), you should find a folder called 'Audio Files'.
+Browse to the OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/Ej7FUh3GMwVMv5oCfr3LSdYBZV7Q240OX_Tb2KQWCqYzFA?e=diwg3w), you should find a folder called 'Audio Files'.
 
 Inside this folder are six recordings of the exposition from the first movement of Beethoven's 5th Symphony. All of these recordings were made within the last ten years, in contrast to the recordings from 1920-1990 considered by Bowen. Have a listen to these and download ONE of the performances that you want to work with in this exercise. 
 
