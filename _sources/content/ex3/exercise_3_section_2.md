@@ -7,6 +7,9 @@ If you are using a Mac computer, click the download link for Mac on the right of
 
 :::{note}
 The Windows version of Sonic Visualiser runs on most modern updates. The Mac version requires OSX 10.12 or later.
+If you're using a Mac and receive a warning along the lines of 'application can't be opened because Apple cannot check it for malicious software', you will need to temporarily override your Mac security settings (don't worry, the app is perfectly safe). 
+First, go to Security & Privacy. Next, click the Open Anyway button in the General pane to confirm your intent to open or install the app. If this doesn't work, you can also try dragging and dropping the download to your applications folder, and then right clicking on it to run.
+If none of these options work, please send me an email and I'll see what I can do!
 :::
 
 Whatever version you are using, download the program using the primary link. Open up the .msi (Windows) or .dmg (Mac) file you downloaded and follow the installer through to the end to complete the installation. On Windows, you may need to wait a while before pressing 'Yes' when the User Account Control screen pops up.

@@ -7,6 +7,9 @@ Inside the folder, download either the MEA_WIN_4_11a.zip or the MEA_4_11a_MAC.zi
 
 :::{note}
 The Windows version of MEA requires at least Windows 7. The Mac version requires OSX 10.13 or later.
+If you're using a Mac and receive a warning along the lines of 'MEA_4_11a can't be opened because Apple cannot check it for malicious software', you will need to temporarily override your Mac security settings (don't worry, the app is perfectly safe). 
+First, go to Security & Privacy. Next, click the Open Anyway button in the General pane to confirm your intent to open or install the app. If this doesn't work, you can also try dragging and dropping the download to your applications folder, and then right clicking on it to run.
+If none of these options work, please send me an email and I'll see what I can do!
 :::
 
 ## Select ONE performance for further study, download both videos.
