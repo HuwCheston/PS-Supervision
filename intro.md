@@ -1,5 +1,7 @@
 # Supervision Exercises
 
+**V3 Build - 16/11/2022**
+
 In preperation for the supervision, I'd like you to carry out a small empirical study into musical expression. 
 
 The following pages contain details about four studies, including research questions, source material, guidance on which software to use, and expected data outputs.

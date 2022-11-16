@@ -1,12 +1,15 @@
 # Section 2: Motion Energy Analysis
 ---
 ## Download Motion Energy Analysis software and extract it to your system.
-Open up this OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/r/personal/hwc31_cam_ac_uk/Documents/Part%20II%20M%26S%20Teaching%20Materials/Exercise%20-%20Movement?csf=1&web=1&e=eg4LCB)
+Open up this OneDrive folder linked [here](https://universityofcambridgecloud-my.sharepoint.com/:f:/g/personal/hwc31_cam_ac_uk/EhYjWUWSRUFMkoDiLwcYx9wBjRKGOhl1M4TRu2_rDJPmDw?e=2fQH5S)
 
 Inside the folder, download either the MEA_WIN_4_11a.zip or the MEA_4_11a_MAC.zip, depending on whether you are using a Windows or Mac system and extract the files.
 
 :::{note}
 The Windows version of MEA requires at least Windows 7. The Mac version requires OSX 10.13 or later.
+If you're using a Mac and receive a warning along the lines of 'MEA_4_11a can't be opened because Apple cannot check it for malicious software', you will need to temporarily override your Mac security settings (don't worry, the app is perfectly safe). 
+First, go to Security & Privacy. Next, click the Open Anyway button in the General pane to confirm your intent to open or install the app. If this doesn't work, you can also try dragging and dropping the download to your applications folder, and then right clicking on it to run.
+If none of these options work, please send me an email and I'll see what I can do!
 :::
 
 ## Select ONE performance for further study, download both videos.
