@@ -1,6 +1,6 @@
 # Supervision Exercises
 
-**V3 Build - 16/11/2022**
+**V4 Build w/updated references - 30/05/2023**
 
 In preperation for the supervision, I'd like you to carry out a small empirical study into musical expression. 
 
