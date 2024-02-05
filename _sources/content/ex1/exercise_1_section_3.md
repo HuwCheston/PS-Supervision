@@ -18,36 +18,26 @@ Copy the whole text file into your spreadsheet. It will load in as a single colu
 
 Now, repeat this process for the second text file. You should end up with two columns, one for each video
 
-## Convert your raw data for both videos into z-scores to enable easier comparison.
+## Scale the data to enable comparison between videos
 
-You might have noticed that, depending on how large you made each ROI, the range of values given out by MEA can be very large – from zero to several thousand, for instance. To help here, we can convert each data point into a z-score. 
+You might have noticed that, depending on how large you made each ROI, the range of values given out by MEA can be very large – from zero to several thousand, for instance. This is because each value depends on the number of pixels contained within each ROI: larger ROIs will lead to larger potential maxima. To enable comparison between both videos, we can scale each column so that they have the same maximum and minimum. For simplicity, we'll scale between 0 and 1.
 
-The z-score is a standardised figure used commonly in statistics. It represents how far each data point is away from the central mean in units of standard deviation. The important thing to remember is that z-scores allow for comparison of scores obtained for different variables and units.
+Create a new column next to your first column of data. In the first cell of this column, enter the following formula:
 
-In order to calculate the z-score, we first need to calculate the mean and standard deviation. In a new cell, enter the following formula (the same for both Excel and Sheets) to calculate the mean, replacing the start and end cell with the coordinates of your sheet:
+```
+=(data - min($start_$cell:$end_$cell)) / (max($start_$cell:$end_$cell) - min($start_$cell:$end_$cell))
+```
 
-`
-=AVERAGE(start_cell: end_cell)
-`
+So, to scale a data point in cell `B1` within the range of cells `B1:B9`:
 
-Enter this formula into another new cell to calculate the standard deviation:
+```
+=(B1 - min($B$1:$B$9)) / (max($B$1:$B$9) - min($B$1:$B$9))
+```
 
-`
-=STDEV(start_cell: end_cell)
-`
-
-Now we've obtained the mean and standard deviation for each dataset, we can calculate the z-score for each point. In a new column next to your data, type the following formula (replace the values with your own) and drag the cell down to calculate z-scores for every data point:
-
-`
-=(data_cell – $mean_$cell)/$stdev_$cell
-`
-
-So, if you want to calculate the z-score for cell A1 with your mean in B1 and standard deviation in B2, your code should look like:
-
-`
-=(A1 – $B$1)/$B$2
-`
+Now, click and drag the new cell down, and you should see a new value for every cell in your original dataset. These will be scaled between 0 and 1, so that a value of 0 is equivalent to the smallest value in the dataset and 1 the largest. 
 
 :::{note}
-The dollar signs included here are really important, as they tell the program to use the same mean and standard deviation cells for each z-score calculation. If you find yourself getting DIV/0 errors when using the z-score calculation, make sure you've added them!
+The dollar signs included here are really important, as they tell the program to use the same range of values when scaling each individual cell. If you find yourself getting DIV/0 or other errors when using the formula, make sure you've added them!
 :::
+
+Finally, repeat the above process for the second column of values you've obtained for the second video.
